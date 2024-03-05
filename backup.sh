@@ -1,3 +1,3 @@
 #!/bin/bash
 data=$(date)
-echo $data
+sdfsdfecho $data
