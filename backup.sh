@@ -1,3 +1,3 @@
 #!/bin/bash
-data=$(date)
-sdfsdfecho $data
+data=$(date)  #this part of code get current date
+dsfsdfsdfdsfdsfsdfdsfdsecho $data
