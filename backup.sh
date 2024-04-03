@@ -1,2 +1,2 @@
 echo Hello, World!
-eho Wow, it works
+echo Wow, it works
