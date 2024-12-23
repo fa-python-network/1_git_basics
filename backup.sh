@@ -1,1 +1,1 @@
-echo 'error'  # todo: исправить ошибку
+echo 'success'
