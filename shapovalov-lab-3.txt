@@ -1,0 +1,55 @@
+  373  mkdir -p ~/git/test
+  374  cd ~/git/test
+  375  git clone https://github.com/one-point-zero/Lab-3.git .
+  376  ls
+  377  echo '#!/bin/bash' > backup.sh
+  378  echo 'echo "This is a backup script."' >> backup.sh
+  379  chmod +x backup.sh
+  380  git status
+  381  git add backup.sh
+  382  git status
+  383  git commit -m "Добавлен скрипт backup.sh"
+  384  git status
+  385  git remote set-url origin git@github.com:one-point-zero/Lab-3.git
+  386  git push
+  387  git push -u origin master
+  388  ssh-keygen
+  389  cp ~/.ssh/id_rsa.pub .
+  390  ls
+  391  rm id_rsa.pub
+  392  cd
+  393  cp ~/.ssh/id_rsa.pub .
+  394  ls
+  395  cd git/test
+  396  git remote add origin git@github.com:one-point-zero/Lab-3.git
+  397  git remote set-url origin git@github.com:one-point-zero/Lab-3.git
+  398  git push origin master
+  399  git config --list
+  400  git push origin master
+  401  nano backup.sh
+  402  git status
+  403  git commit -am "Добавлен комментарий в backup.sh"
+  404  git status
+  405  nano backup.sh
+  406  git status
+  407  git commit -am "Добавлена синтаксическая ошибка в скрипт"
+  408  git status
+  409  git log
+  410  git reset --hard 1cdbc2aa4b4000649f5e3f2cd9487e428cb7caf2
+  411  git log
+  412  echo "This is file 1" > file1.txt
+  413  git commit -am "Добавлен файл file1.txt"
+  414  git reset --hard 1cdbc2aa4b4000649f5e3f2cd9487e428cb7caf2
+  415  git log
+  416  echo "This is file 1" > file1.txt
+  417  git status
+  418  git add file1.txt
+  419  git status
+  420  git commit -m "Добавлен файл file1.txt"
+  421  git status
+  422  echo "This is file 2" > file2.txt
+  423  git add file2.txt
+  424  git commit -m "Добавлен файл file2.txt"
+  425  git log
+  426  git push origin master
+  427  history > lab_3.txt
