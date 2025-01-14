@@ -1,0 +1,74 @@
+  250  mkdir lab_1
+  251  cd lab_1
+  252  git init
+  253  git status
+  254  echo 'print("Hello world!")' > main.py
+  255  git status
+  256  git add main.py
+  257  git status
+  258  git commit -m "Первый коммит: добавлен вывод Hello world"
+  259  git status
+  260  echo '
+def process_text(text):
+    return text.lower()
+' >> main.py
+  261  git status
+  262  git add main.py
+  263  git status
+  264  git commit -m "Добавлена функция process_text для преобразования текста в нижний регистр"
+  265  git status
+  266  echo '
+if __name__ == "__main__":
+    user_input = input("Введите текст: ")
+    print(process_text(user_input))
+' >> main.py
+  267  git status 
+  268  git add main.py 
+  269  git commit -m "Добавлен ввод текста пользователя для функции process_text"
+  270  git status
+  271  git log
+  272  echo 'print("Программа завершена")' >> main.py
+  273  git commit -am "Добавлено сообщение о завершении программы"
+  274  git status
+  275  git log
+  276  echo 'def count_words(text): return len(text.split())' > utils.py
+  277  echo '# Instructions for using the program' > README.md
+  278  git status
+  279  git add .
+  280  git status
+  281  git commit -m "Добавлены utils.py и README.md"
+  282  python3 -m venv venv-lab-1
+  283  git status
+  284  echo "venv/" > .gitignore
+  285  git status
+  286  echo "venv-lab-1" > .gitignore
+  287  git status
+  288  git add .gitignore
+  289  git status
+  290  git commit -m "Добавлен файл .gitignore для исключения служебных файлов"
+  291  git branch feature/text-parsing
+  292  git checkout feature/text-parsing
+  293  git branch
+  294  git checkout main
+  295  git checkout master
+  296  git branch
+  297  echo "Основные инструкции для программы" >> README.md
+  298  git commit -am "Добавлены основные инструкции в README.md"
+  299  git status
+  300  git checkout feature/text-parsing
+  301  echo '
+def parse_text(text):
+    return {"words": text.split(), "count": len(text.split())}
+' >> utils.py
+  302  git commit -am "Добавлена функция parse_text для анализа текста"
+  303  git status
+  304  git checkout main
+  305  git checkout master
+  306  git merge feature/text-parsing
+  307  git status
+  308  git tag -a v1.0 -m "Релиз версии 1.0: стабильная версия программы"
+  309  git tag
+  310  history > $USER.txt
+  311  rm shap.txt
+  312  cd
+  313  history > $USER.txt
