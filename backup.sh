@@ -2,4 +2,4 @@
 echo "This is a backup script"
 
 # This is a new comment
-echo "This is a backup script"
+ech "This is a backup script"
