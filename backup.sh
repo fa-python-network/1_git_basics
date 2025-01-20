@@ -1,3 +1,4 @@
+# Тестовый скрипт
 echo "Script for fourth lab"
 
 RED='\033[0;31m'
