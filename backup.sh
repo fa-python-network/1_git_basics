@@ -1,4 +1,4 @@
-echo "Hello, world"
 date
 echo "Backup started at $(date)"
-#добавляю коммент. пункт 8
+# Added a comment for backup details
+echo "commit number 1"
